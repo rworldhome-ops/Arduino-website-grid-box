@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: poppins, sans-serif;
+}
+
 .container{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
@@ -10,9 +17,38 @@
     "footer footer footer footer";
 }
 
-.navbar{
+.navbar {
     grid-area: navbar;
-    background-color:red ;
+    background-color: red;
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+}
+
+.navbar ul li {
+    flex: 1;
+    /* aligns link boxes to middle*/
+    text-align: center;
+    /* aligns link text to middle*/
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #111111;
 }
 
 .header{
