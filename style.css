@@ -6,6 +6,7 @@ body {
 }
 
 .container{
+    margin: auto;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
     grid-template-rows: .25fr 0.5fr 1fr 3fr .5fr;
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #111111;
+    background-color: #44616b;
 }
 
 .header{
@@ -73,6 +74,10 @@ body {
     border-radius: 20px;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
 }
 
 .box img {
