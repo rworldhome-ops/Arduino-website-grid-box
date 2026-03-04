@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: poppins, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr 1fr 6fr 5fr 1fr;
+    grid-template-areas:
+    "navbar navbar"
+    "header header"
+    "info pics"
+    "specs pics"
+    "footer footer";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: red;
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    background-color:#00979D;
+}
+
+.navbar ul li {
+    flex: 1;
+    /* aligns link boxes to middle*/
+    text-align: center;
+    /* aligns link text to middle*/
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #44616b;
+}
+
+.header{
+    grid-area: header;
+    background-color: khaki;
+}
+
+.info{
+    grid-area: info;
+    background-color: #00979D;
+}
+
+.pics{
+    grid-area: pics;
+    background-color: #44616b;
+}
+
+.specs{
+    grid-area: specs;
+    background-color: aqua;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
