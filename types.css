@@ -2,24 +2,30 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
+h1,
+h2,
+h3,
+p {
+    margin: 20px;
+}
+
+.container {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: .25fr 1fr 4fr 3fr 1fr;
+    grid-template-rows: .25fr .5fr 1.5fr 2.5fr 1fr;
     grid-template-areas:
-    "navbar navbar"
-    "header header"
-    "info pics"
-    "specs pics"
-    "footer footer";
+        "navbar navbar"
+        "header header"
+        "info pics"
+        "specs pics"
+        "footer footer";
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: red;
     display: flex;
     align-items: stretch;
 }
@@ -30,7 +36,7 @@ body {
     padding: 0;
     display: flex;
     width: 100%;
-    background-color:#00979D;
+    background-color: #00979D;
 }
 
 .navbar ul li {
@@ -51,27 +57,30 @@ body {
     background-color: #44616b;
 }
 
-.header{
+.header {
     grid-area: header;
-    background-color: khaki;
 }
 
-.info{
+.info {
     grid-area: info;
-    background-color: #00979D;
 }
 
-.pics{
+.pics {
     grid-area: pics;
-    background-color: #44616b;
+    justify-content: center;
+    align-items: center;
 }
 
-.specs{
+.specs {
     grid-area: specs;
-    background-color: aqua;
 }
 
-.footer{
+.footer {
     grid-area: footer;
     background-color: aquamarine;
+}
+
+.pics img {
+    padding-left: 150px;
+    width: 400px;
 }
