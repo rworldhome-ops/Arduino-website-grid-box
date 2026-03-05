@@ -100,3 +100,7 @@ button:hover {
     grid-area: footer;
     background-color: thistle;
 }
+
+h1, h2, h3 {
+    margin: 5px;
+}
