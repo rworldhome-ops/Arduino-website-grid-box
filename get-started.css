@@ -1,27 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 20px;
+}
+
 .container{
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: .25fr 0.25fr 0.5fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    "navbar navbar"
-    "header header"
-    "contents materials"
-    "links hardware"
-    "links code"
-    "footer footer";
+    "navbar navbar navbar"
+    "header header header"
+    "info info info"
+    "contents materials pics-1"
+    "contents hardware pics-2"
+    "links hardware pics-2"
+    "links code pics-3"
+    "footer footer footer";
 }
 
 .navbar{
     grid-area: navbar;
-    background-color: rebeccapurple;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    background-color: #00979D;
+}
+
+.navbar ul li {
+    flex: 1;
+    /* aligns link boxes to middle*/
+    text-align: center;
+    /* aligns link text to middle*/
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #44616b;
 }
 
 .header{
     grid-area: header;
+}
+
+.info{
+    grid-area: info;
+}
+
+.pics-1 {
+    grid-area: pics-1;
     background-color: red;
+}
+.pics-2 {
+    grid-area: pics-2;
+    background-color: blue;
+}
+.pics-3 {
+    grid-area: pics-3;
+    background-color: green;
 }
 
 .contents{
-    grid-area: table-contents;
+    grid-area: contents;
     background-color: gold;
 }
 
