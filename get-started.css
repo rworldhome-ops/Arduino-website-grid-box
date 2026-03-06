@@ -1,0 +1,51 @@
+.container{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "header header"
+    "contents materials"
+    "links hardware"
+    "links code"
+    "footer footer";
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: rebeccapurple;
+}
+
+.header{
+    grid-area: header;
+    background-color: red;
+}
+
+.contents{
+    grid-area: table-contents;
+    background-color: gold;
+}
+
+.materials{
+    grid-area: materials;
+    background-color: bisque;
+}
+
+.hardware{
+    grid-area: hardware;
+    background-color: gray;
+}
+
+.links{
+    grid-area: links;
+    background-color: blue;
+}
+
+.code{
+    grid-area: code;
+    background-color: aqua;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:aquamarine ;
+}
