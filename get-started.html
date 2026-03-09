@@ -20,33 +20,82 @@
                 <li><a href="get-started.html">Get started</a></li>
             </ul>
         </div>
-        <div class="header"><h1>How to use Arduino</h1></div>
-        <div class="info"><h3>
-            once you have figured out what board you want to use you can now start building amazing projects with it, but before you can start, you need to know the basics
-            of how to use your Arduino board, below is a simple guide on how to get started with your software, hardware, and some simple code to get you going.
-        </h3></div>
-        <div class="contents"><h3>Table of Contents</h3></div>
-        <div class="materials"><h3>Materials Needed</h3>
-        <ul>
-            <li>Arduino Board</li>
-            <li>USB Cable</li>
-            <li>Breadboard</li>
-            <li>Jumper Wires</li>
-            <li>LEDs</li>
-            <li>Resistors</li>
-        </ul></div>
+        <div class="header">
+            <h1>How to Use Arduino</h1>
+        </div>
+        <div class="info">
+            <h3>
+                once you have figured out what board you want to use you can now start building amazing projects with
+                it, but before you can start, you need to know the basics
+                of how to use your Arduino board, below is a simple guide on how to get started with your software,
+                hardware, and some simple code to get you going.
+            </h3>
+        </div>
+        <div class="contents">
+            <h3>Table of Contents</h3>
+        </div>
+        <div class="materials">
+            <h3>Materials Needed</h3>
+            <ul>
+                <li>Arduino Board</li>
+                <li>USB Cable</li>
+                <li>Breadboard</li>
+                <li>Jumper Wires</li>
+                <li>LEDs</li>
+                <li>Resistors</li>
+            </ul>
+        </div>
         <div class="pics-1">
-        <img src="uno.png" alt="" width="150px">
-        <img src="usb.png" alt="" width="150px">
-        <img src="led.png" alt="" width="80px"></div>
-        <div class="hardware">hardware</div>
-        <div class="pics-2">pic 2</div>
-        <div class="links">links</div>
-        <div class="code">code</div>
-        <div class="pics-3">pic 3</div>
+            <img src="uno.png" alt="" width="150px">
+            <img src="usb.png" alt="" width="150px">
+            <img src="led.png" alt="" width="80px">
+        </div>
+        <div class="hardware">
+            <h3>Wiring Diagram</h3>
+            <h3>Follow the diagram to connect your components.
+                make sure to connect the right pins!</h3>
+        </div>
+        <div class="pics-2"><img src="diagram.png" alt="" width="500px"></div>
+        <div class="links">
+            <h3>Links</h3><a
+                href="https://store-usa.arduino.cc/products/arduino-mega-2560-rev3?srsltid=AfmBOoqjyqPOSkxxr4BUbukbWWHunvoOu2wo6un9tgcjQg4MI6iEIYs2"
+                target="_blank">Arduino Mega 2560 Rev3</a><br>
+            <a href="https://store-usa.arduino.cc/products/arduino-uno-rev3?queryID=19ffb5e0865aa28fc37d00dc3b4ee47d"
+                target="_blank">Arduino Uno Rev3</a><br>
+            <a href="https://store-usa.arduino.cc/products/arduino-nano?queryID=f3c7829dd7ebea59b20b99c0e22bd8a7"
+                target="_blank">Arduino Nano</a><br>
+            <a href="https://www.arduino.cc/en/software/">Arduino IDE</a>
+        </div>
+
+        <div class="code">
+            <h3>Code</h3>
+            <h3>Download the Arduino IDE from the official website. and paste this code into the editor.
+                make sure to select Arduino Uno in the boards manager. </h3>
+        </div>
+        <div class="pics-3">
+
+
+            <p>void setup() { <br>
+                <br>
+                // initialize digital pin LED_BUILTIN as an output. <br>
+                <br>
+                pinMode(13, OUTPUT); <br>
+                } <br>
+                <br>
+                void loop() { <br>
+                <br>
+                digitalWrite(13, HIGH); // turn the LED on (HIGH is the voltage level) <br>
+                <br>
+                delay(1000); // wait for a second <br>
+                <br>
+                digitalWrite(13, LOW); // turn the LED off by making the voltage LOW <br>
+                <br>
+                delay(1000); // wait for a second <br>
+                <br>
+                } <br>
+            </p>
+        </div>
         <div class="footer">footer</div>
-        
+
 
     </div>
-
-

@@ -12,22 +12,21 @@ p {
     margin: 20px;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: .25fr 0.25fr 0.5fr 2fr 2fr 2fr 1fr;
-    grid-template-areas: 
-    "navbar navbar navbar"
-    "header header header"
-    "info info info"
-    "contents materials pics-1"
-    "contents hardware pics-2"
-    "links hardware pics-2"
-    "links code pics-3"
-    "footer footer footer";
+    grid-template-columns: 1.5fr 3fr 2fr;
+    grid-template-rows: .10fr .10fr .10fr .5fr .5fr .5fr;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "header header header"
+        "info info info"
+        "contents materials pics-1"
+        "links hardware pics-2"
+        "links code pics-3"
+        "footer footer footer";
 }
 
-.navbar{
+.navbar {
     grid-area: navbar;
 }
 
@@ -64,53 +63,49 @@ p {
     background-color: #44616b;
 }
 
-.header{
+.header {
     grid-area: header;
 }
 
-.info{
+.info {
     grid-area: info;
 }
 
 .pics-1 {
     grid-area: pics-1;
-    background-color: red;
 }
+
 .pics-2 {
     grid-area: pics-2;
-    background-color: blue;
 }
+
 .pics-3 {
     grid-area: pics-3;
-    background-color: green;
+    background-color: #535e61;
 }
 
-.contents{
+.contents {
     grid-area: contents;
-    background-color: gold;
+    background-color: antiquewhite;
 }
 
-.materials{
+.materials {
     grid-area: materials;
-    background-color: bisque;
 }
 
-.hardware{
+.hardware {
     grid-area: hardware;
-    background-color: gray;
 }
 
-.links{
+.links {
     grid-area: links;
-    background-color: blue;
+    background-color: antiquewhite;
 }
 
-.code{
+.code {
     grid-area: code;
-    background-color: aqua;
 }
 
-.footer{
+.footer {
     grid-area: footer;
-    background-color:aquamarine ;
 }
