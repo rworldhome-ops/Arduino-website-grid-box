@@ -20,7 +20,7 @@ p {
         "navbar navbar navbar"
         "header header header"
         "info info info"
-        "contents materials pics-1"
+        "links materials pics-1"
         "links hardware pics-2"
         "links code pics-3"
         "footer footer footer";
@@ -108,4 +108,5 @@ p {
 
 .footer {
     grid-area: footer;
+    background-color: #00979D;
 }

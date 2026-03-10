@@ -99,6 +99,7 @@ button:hover {
 .footer {
     grid-area: footer;
     background-color: thistle;
+    background-color: #00979D;
 }
 
 h1,

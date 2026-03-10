@@ -15,7 +15,7 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: .25fr .5fr 1.5fr 2.5fr 1fr;
+    grid-template-rows: .25fr .5fr 1.5fr 2.5fr .25fr;
     grid-template-areas:
         "navbar navbar"
         "header header"
@@ -77,7 +77,7 @@ p {
 
 .footer {
     grid-area: footer;
-    background-color: aquamarine;
+    background-color: #00979D;
 }
 
 .pics img {
